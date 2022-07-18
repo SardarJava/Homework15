@@ -3,35 +3,33 @@ public class Main {
 
         Person person = new Person("Sardarbek", 1);
         System.out.println(person);
+        person.toString();
         person.learning();
         person.eating();
         person.walking();
         System.out.println();
 
-        Programmer programmer = new Programmer("James Gosling", 2);
+        Programmer programmer = new Programmer("James Gosling", 2 , " Java programming language");
         System.out.println(programmer);
-        programmer.setCompanyName("Company name: " + "Java programming language");
-        System.out.println(programmer.getCompanyName());
+        programmer.toString();
         programmer.learning();
         programmer.eating();
         programmer.walking();
         programmer.coding();
         System.out.println();
 
-        Dancer dancer = new Dancer("Atai omurzakov", 3);
+        Dancer dancer = new Dancer("Atai omurzakov", 3, "Tumar KR");
         System.out.println(dancer);
-        dancer.setGroupName("Group name: " + "Tumar KR");
-        System.out.println(dancer.getGroupName());
+        dancer.toString();
         dancer.learning();
         dancer.eating();
         dancer.walking();
         dancer.dancing();
         System.out.println();
 
-        Singer singer = new Singer("Viktor Tsoy", 4);
+        Singer singer = new Singer("Viktor Tsoy", 4, "Kino");
         System.out.println(singer);
-        singer.setBandName("Band name: " + "Kino");
-        System.out.println(singer.getBandName());
+        singer.toString();
         singer.learning();
         singer.eating();
         singer.walking();

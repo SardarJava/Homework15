@@ -1,8 +1,11 @@
 public class Dancer extends Person{
-    public Dancer (String name, int designation){
-        super(name, designation);}
 
     private String groupName;
+
+    public Dancer(String name, int designation, String groupName) {
+        super(name, designation);
+        this.groupName = groupName;
+    }
 
     public String getGroupName() {
         return groupName;
@@ -17,5 +20,10 @@ public class Dancer extends Person{
 
     void dancing (){dance();}
 
-
+    @Override
+    public String toString() {
+        return "Dancer{" + super.toString() +
+                " groupName: '" + groupName + '\'' +
+                "} ";
+    }
 }
